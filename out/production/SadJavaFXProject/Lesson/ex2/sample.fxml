@@ -1,0 +1,14 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<VBox fx:controller="Lesson.ex2.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" fx:id="vbox">
+    <stylesheets>
+        <URL value="@idea/navigate/reference?project=SadJavaFXProject&path=Lesson/css/style.css"/>
+    </stylesheets>
+
+
+    <Button text="add Btn" fx:id="addbtn" onAction="#clickAddBtn"/>
+</VBox>
