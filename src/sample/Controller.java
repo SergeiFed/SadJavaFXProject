@@ -1,23 +1,37 @@
 package sample;
 
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
+import javafx.stage.Stage;
+
 
 public class Controller {
-    @FXML
-    public TextArea textArea;
-    @FXML
-    public TextField textField;
+
+    @FXML private TextArea taChat;
+    @FXML private TextField tfMessage;
 
 
-    public void clickBtn1(ActionEvent actionEvent) {
-        textArea.appendText("Hello\n");
+    public void sendButtonAction(ActionEvent actionEvent) {
+        taChat.appendText("Me: " + tfMessage.getText()+"\n");
+        tfMessage.requestFocus();
+        tfMessage.clear();
+        taChat.setOnKeyPressed(event -> {
+            if(event.getCode() == KeyCode.ENTER){
+                taChat.appendText("Me: " + tfMessage.getText()+"\n");
+                tfMessage.requestFocus();
+                tfMessage.clear();
+            }
+        });
     }
 
-    public void clickSend(ActionEvent actionEvent) {
-        textArea.appendText(textField.getText()+"\n");
-        textField.requestFocus();
     }
-}
+
+
+
