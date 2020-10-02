@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <children>
+      <Button mnemonicParsing="false" text="Button" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="100.0" />
+      <CheckBox mnemonicParsing="false" text="CheckBox" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <CheckBox mnemonicParsing="false" text="CheckBox" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="60.0" />
+      <CheckBox mnemonicParsing="false" text="CheckBox" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0" />
+   </children>
+</AnchorPane>

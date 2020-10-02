@@ -1,0 +1,25 @@
+.root {
+     -fx-font-size: 16px;
+     -fx-background-color: darkblue;
+}
+
+.button {
+    -fx-background-color: yellow;
+    -fx-font-size: 16px;
+
+}
+.button: hover, #clickBtn1{
+     -fx-background-color: green;
+}
+
+#clickBtn1 {
+    -fx-background-color: orange;
+}
+
+.text-area {
+        -fx-background-color: deeppink;
+        -fx-text-fill: deeppink;
+        -fx-highlight-text-fill: deeppink;
+        -fx-highlight-fill: deeppink;
+        -fx-control-inner-background: yellow;
+}

@@ -1,49 +1,45 @@
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.Slider?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.control.Label?>
-<BorderPane fx:controller="ex1.Controller"
-          xmlns:fx="http://javafx.com/fxml">
-  <top>
-    <MenuBar>
-      <Menu text="Файл">
-        <MenuItem text="Открыть" />
-        <MenuItem text="Сохранить" />
-        <MenuItem text="Закрыть" onAction="#clickClose" fx:id="close"/>
-        <MenuItem text="Настройки" />
-      </Menu>
-    </MenuBar>
-  </top>
+<?xml version="1.0" encoding="UTF-8"?>
 
-  <center>
-    <Slider fx:id="slider" min="0" max="100" showTickMarks="true" showTickLabels="true"
-        onMouseReleased="#changeSlider"
-    />
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-  </center>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="ex1.Controller">
+    <top>
+        <MenuBar>
+            <Menu text="Файл">
+                <MenuItem text="Открыть"/>
+                <MenuItem text="Сохранить"/>
+                <MenuItem fx:id="close" onAction="#clickClose" text="Закрыть"/>
+                <MenuItem text="Настройки"/>
+            </Menu>
+        </MenuBar>
+    </top>
 
-  <bottom>
-    <HBox>
-      <Button text="закрыть"/>
-      <Button text="закрыть"/>
-      <Button text="закрыть"/>
-      <Button text="закрыть"/>
-      <Label fx:id="label" text="0"/>
-    </HBox>
+    <center>
+        <Slider fx:id="slider" max="100" min="0" onMouseReleased="#changeSlider" showTickLabels="true"
+                showTickMarks="true"/>
 
-  </bottom>
+    </center>
 
-  <right>
+    <bottom>
+        <HBox>
+            <Button text="закрыть"/>
+            <Button text="закрыть"/>
+            <Button text="закрыть"/>
+            <Button text="закрыть"/>
+            <Label fx:id="label" text="0"/>
+        </HBox>
 
-  </right>
+    </bottom>
 
-  <left>
-  </left>
+    <right>
+
+    </right>
+
+    <left>
+
+    </left>
 </BorderPane>
